@@ -52,14 +52,14 @@ ViTベースの手法による画像分類のサンプルコード
 
 ### 環境設定
 
-[先述の環境](https://github.com/cu-milab/ra-takase-2020/tree/master/Code/ViT_sample#%E5%8B%95%E4%BD%9C%E7%92%B0%E5%A2%83)を整えてください．
+[先述の環境](https://github.com/SyunkiTakase/ViT_Classification_Sample#%E5%8B%95%E4%BD%9C%E7%92%B0%E5%A2%83)を整えてください．
 
 ### 学習済みモデルのダウンロード
 MAEで学習したTransformer Encoderをファインチューニングする場合は学習済みのモデルをダウンロードしてください．
 <details>
 <summary>学習済みのモデル</summary>
  
-MAE：http://gofile.me/77OyG/Ez4XwKwo8
+MAE：https://github.com/facebookresearch/mae
 
 </details>
 
