@@ -1,4 +1,5 @@
 # ViT_Classification_Sample
+ViTベースの手法による画像分類のサンプルコード
 
 ## 動作環境
 <details>
