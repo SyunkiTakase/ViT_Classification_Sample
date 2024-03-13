@@ -5,9 +5,6 @@ ViTベースの手法による画像分類のサンプルコード
 <details>
 <summary>ライブラリのバージョン</summary>
  
-* Ubuntu 18.04
-* Geforce RTX 4090
-* driver 530.30.02
 * cuda 12.1
 * python 3.6.9
 * torch 1.8.1+cu111
@@ -70,16 +67,20 @@ MAE：https://github.com/facebookresearch/mae
 
 <details>
 <summary>ViT，MAE，DeiT，CaiTのファインチューニング(CIFAR-10)</summary>
- 
+
+ViTの学習 
 ```
 python3 vit_train.py --epoch 10 --batch_size 128 --amp --dataset cifar10 --warmup_t 0 --warmup_lr_init 0
 ```
+ViT(MAEで学習済みのTransformer Encoder)の学習
 ```
 python3 mae_train.py --epoch 10 --batch_size 128 --amp --dataset cifar10 --warmup_t 0 --warmup_lr_init 0
 ```
+DeiTの学習
 ```
 python3 deit_train.py --epoch 10 --batch_size 128 --amp --dataset cifar10 --warmup_t 0 --warmup_lr_init 0
 ```
+CaiTの学習
 ```
 python3 cait_train.py --epoch 10 --batch_size 128 --amp --dataset cifar10 --warmup_t 0 --warmup_lr_init 0
 ```
@@ -87,16 +88,20 @@ python3 cait_train.py --epoch 10 --batch_size 128 --amp --dataset cifar10 --warm
 
 <details>
 <summary>ViT，MAE，DeiT，CaiTのファインチューニング(CIFAR-100)</summary>
- 
+
+ViTの学習 
 ```
 python3 vit_train.py --epoch 10 --batch_size 128 --amp --dataset cifar100 --warmup_t 0 --warmup_lr_init 0
 ```
+ViT(MAEで学習済みのTransformer Encoder)の学習
 ```
 python3 mae_train.py --epoch 10 --batch_size 128 --amp --dataset cifar100 --warmup_t 0 --warmup_lr_init 0
 ```
+DeiTの学習
 ```
 python3 deit_train.py --epoch 10 --batch_size 128 --amp --dataset cifar100 --warmup_t 0 --warmup_lr_init 0
 ```
+CaiTの学習
 ```
 python3 cait_train.py --epoch 10 --batch_size 128 --amp --dataset cifar100 --warmup_t 0 --warmup_lr_init 0
 ```
