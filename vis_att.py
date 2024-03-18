@@ -85,13 +85,10 @@ def main():
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 
-    mean = [0.4914, 0.4822, 0.4465]
-    std = [0.2023, 0.1994, 0.2010]
-
     test_transform = transforms.Compose([
         transforms.ToTensor(),
         transforms.Resize((224,224)),
-        transforms.Normalize(mean, std),
+        transforms.Normalize(IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD),
     ])
     test_dataset = torchvision.datasets.CIFAR10("./data", train=False, transform=test_transform, download=True)
     testloader = torch.utils.data.DataLoader(test_dataset, batch_size=1, shuffle=False, num_workers=8)
